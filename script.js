@@ -1,49 +1,51 @@
-const questions = {
-    categorie1: [
-        "Question 1 de la catégorie 1",
-        "Question 2 de la catégorie 1",
-        // ...
-    ],
-    categorie2: [
-        "Question 1 de la catégorie 2",
-        "Question 2 de la catégorie 2",
-        // ...
-    ],
-    categorie3: [
-        "Question 1 de la catégorie 3",
-        "Question 2 de la catégorie 3",
-        // ...
-    ],
-};
+const questionElement = document.getElementById("question");
+const bouton1 = document.getElementById("bouton1");
+const bouton2 = document.getElementById("bouton2");
+const bouton3 = document.getElementById("bouton3");
+const boutonChance = document.getElementById("boutonChance");
+const questionContainer = document.getElementById("question-container");
 
-const questionContainer = document.getElementById("question-container"); // Récupérer le conteneur de question
+let questions = []; // Tableau pour stocker les questions chargées depuis le fichier JSON
+
+// Fonction pour charger les questions depuis le fichier JSON
+function chargerQuestions() {
+  fetch("questions.json") // Utilisation de fetch pour récupérer le contenu du fichier JSON
+    .then(response => response.json()) // Convertit la réponse en objet JSON
+    .then(data => {
+      questions = data; // Stocke les questions dans le tableau "questions"
+    })
+    .catch(error => console.error("Erreur lors du chargement des questions:", error));
+}
 
 function afficherQuestionAleatoire(categorie) {
-    questionContainer.style.display = "block"; // Afficher le conteneur
+  questionContainer.style.display = "block";
+  const questionsFiltrees = questions.filter(question => question.Catégorie === categorie && question.Afficher); // Filtre les questions par catégorie et par statut "Afficher"
 
-    if (questions[categorie] && questions[categorie].length > 0) {
-        const randomIndex = Math.floor(Math.random() * questions[categorie].length);
-        questionElement.textContent = questions[categorie][randomIndex];
-    } else {
-        questionElement.textContent = "Aucune question disponible pour cette catégorie.";
-    }
+  if (questionsFiltrees.length > 0) {
+    const randomIndex = Math.floor(Math.random() * questionsFiltrees.length);
+    questionElement.textContent = questionsFiltrees[randomIndex].Question;
+  } else {
+    questionElement.textContent = "Aucune question disponible pour cette catégorie.";
+  }
 }
 
-function afficherQuestionAleatoireToutesCategories() { // Nouvelle fonction
-    const toutesLesQuestions = [];
-    for (const categorie in questions) {
-        toutesLesQuestions.push(...questions[categorie]);
-    }
+function afficherQuestionAleatoireToutesCategories() {
+  questionContainer.style.display = "block";
+  const questionsAffichees = questions.filter(question => question.Afficher); // Filtre uniquement les questions avec "Afficher": true
 
-    if (toutesLesQuestions.length > 0) {
-        const randomIndex = Math.floor(Math.random() * toutesLesQuestions.length);
-        questionElement.textContent = toutesLesQuestions[randomIndex];
-    } else {
-        questionElement.textContent = "Aucune question disponible.";
-    }
+  if (questionsAffichees.length > 0) {
+    const randomIndex = Math.floor(Math.random() * questionsAffichees.length);
+    questionElement.textContent = questionsAffichees[randomIndex].Question;
+  } else {
+    questionElement.textContent = "Aucune question disponible.";
+  }
 }
 
-bouton1.addEventListener("click", () => afficherQuestionAleatoire("categorie1"));
-bouton2.addEventListener("click", () => afficherQuestionAleatoire("categorie2"));
-bouton3.addEventListener("click", () => afficherQuestionAleatoire("categorie3"));
+// Chargement des questions au chargement de la page
+chargerQuestions();
+
+// Écouteurs d'événements pour les boutons
+bouton1.addEventListener("click", () => afficherQuestionAleatoire("Catégorie 1"));
+bouton2.addEventListener("click", () => afficherQuestionAleatoire("Catégorie 2"));
+bouton3.addEventListener("click", () => afficherQuestionAleatoire("Catégorie 3"));
 boutonChance.addEventListener("click", afficherQuestionAleatoireToutesCategories);
