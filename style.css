@@ -6,7 +6,9 @@ body {
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    background-color: #f0f0f0;
+    background-image: linear-gradient(to bottom, #FFFFFF, #F5DDFF 20%, #76F8E8 51%, #B3ECFF 76%, #FFE1FF 100%); /* Dégradé de couleurs */
+    background-size: cover; /* Pour que le dégradé couvre toute la page */
+    backdrop-filter: blur(5px); /* Ajoute un effet de flou à l'arrière-plan */
 }
 
 #button-container {
