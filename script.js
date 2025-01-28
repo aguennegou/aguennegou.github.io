@@ -5,16 +5,21 @@ const bouton3 = document.getElementById("bouton3");
 const boutonChance = document.getElementById("boutonChance");
 const questionContainer = document.getElementById("question-container");
 
-let questions = []; // Tableau pour stocker les questions chargées depuis le fichier JSON
+let questions = [];
 
-// Fonction pour charger les questions depuis le fichier JSON
+// Fonction pour charger les questions depuis le fichier CSV
 function chargerQuestions() {
-  fetch("questions.json") // Utilisation de fetch pour récupérer le contenu du fichier JSON
-    .then(response => response.json()) // Convertit la réponse en objet JSON
-    .then(data => {
-      questions = data; // Stocke les questions dans le tableau "questions"
-    })
-    .catch(error => console.error("Erreur lors du chargement des questions:", error));
+  Papa.parse("questions.csv", { 
+    download: true, 
+    header: true, 
+    dynamicTyping: true, 
+    complete: function(results) { 
+      questions = results.data;
+    },
+    error: function(error) {
+      console.error("Erreur lors du chargement des questions:", error);
+    }
+  });
 }
 
 function afficherQuestionAleatoire(categorie) {
