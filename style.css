@@ -19,8 +19,11 @@ body {
     background: linear-gradient(to right, #FFFFFF, #ECE9E6);
     display: flex;
     flex-grow: 1;
-    z-index: -1; /* Place le fond derrière le reste du contenu */
-    backdrop-filter: blur(5px); /* Flou subtil sur le fond */
+    z-index: -1;
+    backdrop-filter: blur(5px); 
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
 }
 
 .background div {
@@ -28,8 +31,7 @@ body {
     border-radius: 100%;
     height: 0;
     opacity: 0.4;
-    /* J'ai réduit le blur ici pour un effet plus subtil. Ajustez cette valeur. */
-    filter: blur(20px); /* Valeur de flou plus raisonnable */
+    filter: blur(20px);
 }
 
 .background div:nth-child(1) {
@@ -63,7 +65,9 @@ button {
     border-radius: 4px; 
     background-color: white;
     color: #333; 
-    font-size: 16px;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
     font-weight: 500;
     cursor: pointer;
     transition: background-color 0.2s, box-shadow 0.2s;
@@ -102,6 +106,8 @@ button:active {
 }
 
 #question {
-    font-size: 1.2em;
+    font-family: 'Maven Pro', sans-serif; /* Applique Maven Pro, sinon une police sans-serif par défaut */
+    font-weight: 300; /* Correspond à Medium */
+    font-size: 16px;
     color: #333;
 }
