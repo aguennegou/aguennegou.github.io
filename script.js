@@ -45,7 +45,7 @@ function afficherQuestionAleatoireToutesCategories() {
 chargerQuestions();
 
 // Écouteurs d'événements pour les boutons
-bouton1.addEventListener("click", () => afficherQuestionAleatoire("Catégorie 1"));
-bouton2.addEventListener("click", () => afficherQuestionAleatoire("Catégorie 2"));
-bouton3.addEventListener("click", () => afficherQuestionAleatoire("Catégorie 3"));
+bouton1.addEventListener("click", () => afficherQuestionAleatoire("Carrière"));
+bouton2.addEventListener("click", () => afficherQuestionAleatoire("Équilibre pro/perso"));
+bouton3.addEventListener("click", () => afficherQuestionAleatoire("Ton manager"));
 boutonChance.addEventListener("click", afficherQuestionAleatoireToutesCategories);
