@@ -46,4 +46,4 @@ function afficherQuestionAleatoireToutesCategories() { // Nouvelle fonction
 bouton1.addEventListener("click", () => afficherQuestionAleatoire("categorie1"));
 bouton2.addEventListener("click", () => afficherQuestionAleatoire("categorie2"));
 bouton3.addEventListener("click", () => afficherQuestionAleatoire("categorie3"));
-boutonChance.addEventListener("click", afficherQuestionAleatoireToutesCategories); // Écouteur d'événements pour le bouton "J'ai de la chance"
+boutonChance.addEventListener("click", afficherQuestionAleatoireToutesCategories);
