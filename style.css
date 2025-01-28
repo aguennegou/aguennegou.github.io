@@ -7,7 +7,7 @@ body {
     min-height: 100vh;
     margin: 0;
     overflow: hidden;
-    background-color: #f4f5f9; /* Couleur de fond simplifiée */
+    background-color: #f4f5f9;
 }
 
 #button-container {
@@ -52,7 +52,7 @@ button:active {
 
 #question-container {
     background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px; /* Padding uniforme */
+    padding: 0 20px;
     box-shadow: 0 0 0 1px #E3E5EE inset;
     border-radius: 10px;
     text-align: center;
