@@ -16,18 +16,16 @@ const questions = {
     ],
 };
 
-const questionElement = document.getElementById("question");
-const bouton1 = document.getElementById("bouton1");
-const bouton2 = document.getElementById("bouton2");
-const bouton3 = document.getElementById("bouton3");
-const boutonChance = document.getElementById("boutonChance"); // Récupération du nouveau bouton
+const questionContainer = document.getElementById("question-container"); // Récupérer le conteneur de question
 
 function afficherQuestionAleatoire(categorie) {
+    questionContainer.style.display = "block"; // Afficher le conteneur
+
     if (questions[categorie] && questions[categorie].length > 0) {
         const randomIndex = Math.floor(Math.random() * questions[categorie].length);
         questionElement.textContent = questions[categorie][randomIndex];
     } else {
-      questionElement.textContent = "Aucune question disponible pour cette catégorie.";
+        questionElement.textContent = "Aucune question disponible pour cette catégorie.";
     }
 }
 
