@@ -1,22 +1,19 @@
 Question;Catégorie;Afficher
-Est-ce bientôt le week-end ?;Carrière;TRUE
-Ai-je bien fermé la porte à clé ?;Équilibre pro/perso;TRUE
-Qu'est-ce que je vais manger ce soir ?;Ton manager;TRUE
 Y a-t-il des obstacles que je peux enlever pour toi ?;Ton manager;TRUE
 En tant que ton manager, qu'aimerais-tu que j'arrête, commence, ou continue à faire ?;Ton manager;TRUE
 À quel moment, la semaine dernière, as-tu été le plus frustré ou découragé par ton travail ? Que puis-je faire pour t'aider à gérer cela ?;Ton manager;TRUE
-Penses-tu recevoir suffisamment de retours ? Pourquoi/pourquoi pas ?;Ton manager;TRUE
+Penses-tu recevoir suffisamment de retours ? <br/> Pourquoi/pourquoi pas ?;Ton manager;TRUE
 As-tu des retours pour moi ?;Ton manager;TRUE
-Penses-tu recevoir assez de retours ? Est-ce que les retours sont utiles pour ton développement personnel ? Que puis-je faire pour t'aider à obtenir les retours que tu souhaites ?;Ton manager;TRUE
+Penses-tu recevoir assez de retours ? <br/>Est-ce que les retours sont utiles pour ton développement personnel ? Que puis-je faire pour t'aider à obtenir les retours que tu souhaites ?;Ton manager;TRUE
 Comment puis-je mieux te soutenir ?;Ton manager;TRUE
 Comment puis-je rendre tes journées plus épanouissantes ?;Ton manager;TRUE
 Comment pourrais-je mieux communiquer avec toi ?;Ton manager;TRUE
 Comment préfères-tu recevoir des retours ?;Ton manager;TRUE
 Comment puis-je rendre ce projet plus stimulant ou intéressant pour toi ?;Ton manager;TRUE
-J'aimerais m'améliorer en tant que manager et j'aurais vraiment besoin de ton aide. Serais-tu prêt à me donner des retours la semaine prochaine sur une ou deux choses que je pourrais faire mieux en tant que ton manager ?;Ton manager;TRUE
+J'aimerais m'améliorer en tant que manager et j'aurais vraiment besoin de ton aide. <br/>Serais-tu prêt à me donner des retours la semaine prochaine sur une ou deux choses que je pourrais faire mieux en tant que ton manager ?;Ton manager;TRUE
 Si tu étais à ma place, quels changements ferais-tu ?;Ton manager;TRUE
 J'essaie d'améliorer mes 1-to-1 et j'apprécierais ton avis honnête sur celui-ci : qu'est-ce que tu as aimé et qu'est-ce qui pourrait être amélioré ?;Ton manager;TRUE
-J'ai remarqué que nos derniers 1-to-1 sont restés assez superficiels. Quelles sont tes impressions honnêtes sur cette réunion ? Que pourrions-nous faire différemment ou mieux ?;Ton manager;TRUE
+J'ai remarqué que nos derniers 1-to-1 sont restés assez superficiels. <br/>Quelles sont tes impressions honnêtes sur cette réunion ? Que pourrions-nous faire différemment ou mieux ?;Ton manager;TRUE
 Quelles ressources supplémentaires puis-je te fournir d'ici notre prochaine réunion ?;Ton manager;TRUE
 Quelles sont tes impressions sur nos 1-to-1 ? Que pourrions-nous faire différemment ou mieux ?;Ton manager;TRUE
 Que penses-tu des changements que j'ai faits ?;Ton manager;TRUE
@@ -101,7 +98,7 @@ Quel travail fais-tu ici qui, selon toi, est le plus en ligne avec tes objectifs
 Qu'est-ce qui ferait de ce travail ton travail parfait ?;Carrière;TRUE
 Qu'aimerais-tu apprendre à l'avenir ?;Carrière;TRUE
 Quelle est la seule chose que nous pourrions faire aujourd'hui pour t'aider à atteindre tes objectifs à long terme ?;Carrière;TRUE
-Où te vois-tu dans ta carrière dans 1 an, 3 ans ? Que peux-tu faire pour t'assurer d'atteindre ces objectifs ? Comment pouvons-nous, en tant que groupe, t'aider à atteindre ces objectifs ?;Carrière;TRUE
+Où te vois-tu dans ta carrière dans 1 an, 3 ans ? </br>Que peux-tu faire pour t'assurer d'atteindre ces objectifs ? </br>Comment pouvons-nous, en tant que groupe, t'aider à atteindre ces objectifs ?;Carrière;TRUE
 Que puis-je faire pour aider à progresser dans tes objectifs ?;Carrière;TRUE
 Que puis-je faire pour t'aider à progresser dans ta carrière ?;Carrière;TRUE
 Qu'est-ce qui te manque dans ton rôle actuel ?;Carrière;TRUE
