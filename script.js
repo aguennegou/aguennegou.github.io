@@ -28,9 +28,9 @@ function afficherQuestionAleatoire(categorie) {
 
   if (questionsFiltrees.length > 0) {
     const randomIndex = Math.floor(Math.random() * questionsFiltrees.length),
-    questionElement.innerHTML = questionsFiltrees[randomIndex].Question,
+    questionElement.textContent = questionsFiltrees[randomIndex].Question,
   } else {
-    questionElement.innerHTML = "Aucune question disponible pour cette catégorie.",
+    questionElement.textContent = "Aucune question disponible pour cette catégorie.",
   }
 }
 
@@ -40,9 +40,9 @@ function afficherQuestionAleatoireToutesCategories() {
 
   if (questionsAffichees.length > 0) {
     const randomIndex = Math.floor(Math.random() * questionsAffichees.length),
-    questionElement.innerHTML = questionsAffichees[randomIndex].Question,
+    questionElement.textContent = questionsAffichees[randomIndex].Question,
   } else {
-    questionElement.innerHTML = "Aucune question disponible.",
+    questionElement.textContent = "Aucune question disponible.",
   }
 }
 
